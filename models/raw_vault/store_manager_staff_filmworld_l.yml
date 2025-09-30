@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: store_manager_staff_filmworld_l
+    columns:
+      - name: hk_store_filmworld_h
+        tests:
+          - relationships:
+                to: ref('store_filmworld_h')
+                field: hk_store_filmworld_h
+      - name: hk_staff_filmworld_h
+        tests:
+          - relationships:
+                to: ref('staff_filmworld_h')
+                field: hk_staff_filmworld_h

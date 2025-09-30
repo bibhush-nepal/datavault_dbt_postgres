@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: customer_store_address_filmworld_l
+    columns:
+      - name: hk_customer_filmworld_h
+        tests:
+          - relationships:
+                to: ref('customer_filmworld_h')
+                field: hk_customer_filmworld_h
+      - name: hk_store_filmworld_h
+        tests:
+          - relationships:
+                to: ref('store_filmworld_h')
+                field: hk_store_filmworld_h
+      - name: hk_address_filmworld_h
+        tests:
+          - relationships:
+                to: ref('address_filmworld_h')
+                field: hk_address_filmworld_h

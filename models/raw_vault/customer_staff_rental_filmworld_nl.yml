@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: customer_staff_rental_filmworld_nl
+    columns:
+      - name: hk_customer_filmworld_h
+        tests:
+          - relationships:
+                to: ref('customer_filmworld_h')
+                field: hk_customer_filmworld_h
+      - name: hk_staff_filmworld_h
+        tests:
+          - relationships:
+                to: ref('staff_filmworld_h')
+                field: hk_staff_filmworld_h
+      - name: hk_rental_filmworld_h
+        tests:
+          - relationships:
+                to: ref('rental_filmworld_h')
+                field: hk_rental_filmworld_h

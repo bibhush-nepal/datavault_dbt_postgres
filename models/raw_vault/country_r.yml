@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: country_r
+    columns: 
+      - name: country_id
+        tests:
+          - unique
+          - not_null

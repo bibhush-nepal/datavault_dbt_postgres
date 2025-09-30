@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: rental_filmworld_h
+    columns: 
+      - name: hk_rental_filmworld_h
+        tests:
+          - unique
+          - not_null

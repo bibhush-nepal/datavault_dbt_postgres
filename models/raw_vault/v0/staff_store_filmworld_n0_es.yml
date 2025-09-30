@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: staff_store_filmworld_n0_es
+    tests:
+      - dbt_utils.unique_combination_of_columns: 
+          combination_of_columns:
+            - hd_staff_store_filmworld_n_es
+            - hk_staff_store_filmworld_l
+            - ldts

@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: customer_filmworld_n0_rts
+    tests:
+      - dbt_utils.unique_combination_of_columns: 
+          combination_of_columns:
+            - hd_customer_filmworld_n_rts
+            - hk_customer_filmworld_h
+            - ldts

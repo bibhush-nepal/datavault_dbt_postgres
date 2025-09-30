@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: actor_h
+    columns: 
+      - name: hk_actor_h
+        tests:
+          - unique
+          - not_null

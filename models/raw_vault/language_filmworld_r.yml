@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: language_filmworld_r
+    columns: 
+      - name: language_id
+        tests:
+          - unique
+          - not_null

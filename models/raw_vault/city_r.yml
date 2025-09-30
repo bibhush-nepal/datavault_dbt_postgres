@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: city_r
+    columns: 
+      - name: city_id
+        tests:
+          - unique
+          - not_null

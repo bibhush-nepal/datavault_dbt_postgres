@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: staff_address_filmworld_l
+    columns:
+      - name: hk_staff_filmworld_h
+        tests:
+          - relationships:
+                to: ref('staff_filmworld_h')
+                field: hk_staff_filmworld_h
+      - name: hk_address_filmworld_h
+        tests:
+          - relationships:
+                to: ref('address_filmworld_h')
+                field: hk_address_filmworld_h

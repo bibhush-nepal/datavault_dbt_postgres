@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: rental_inventory_customer_staff_filmworld_n0_es
+    tests:
+      - dbt_utils.unique_combination_of_columns: 
+          combination_of_columns:
+            - hd_rental_inventory_customer_staff_filmworld_n_es
+            - hk_rental_inventory_customer_staff_filmworld_l
+            - ldts

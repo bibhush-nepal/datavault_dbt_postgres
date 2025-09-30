@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: film_actor_filmworld_l
+    columns:
+      - name: hk_film_filmworld_h
+        tests:
+          - relationships:
+                to: ref('film_filmworld_h')
+                field: hk_film_filmworld_h
+      - name: hk_actor_filmworld_h
+        tests:
+          - relationships:
+                to: ref('actor_filmworld_h')
+                field: hk_actor_filmworld_h

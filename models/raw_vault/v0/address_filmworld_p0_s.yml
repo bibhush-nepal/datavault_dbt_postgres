@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: address_filmworld_p0_s
+    tests:
+      - dbt_utils.unique_combination_of_columns: 
+          combination_of_columns:
+            - hd_address_filmworld_p_s
+            - hk_address_filmworld_h
+            - ldts

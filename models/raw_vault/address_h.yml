@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: address_h
+    columns: 
+      - name: hk_address_h
+        tests:
+          - unique
+          - not_null
